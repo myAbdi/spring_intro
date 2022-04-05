@@ -15,6 +15,7 @@ public class Book {
     private String isbn;
     private String title;
     private String publisher;
+    private Long authoredId;
 
     public Book() {
 
@@ -28,10 +29,19 @@ public class Book {
         this.id = id;
     }
 
-    public Book(String isbn, String title, String publisher) {
+    public Book(String isbn, String title, String publisher, Long authoredId) {
         this.isbn = isbn;
         this.title = title;
         this.publisher = publisher;
+        this.authoredId = authoredId;
+    }
+
+    public Long getAuthoredId() {
+        return authoredId;
+    }
+
+    public void setAuthoredId(Long authoredId) {
+        this.authoredId = authoredId;
     }
 
     public String getIsbn() {
